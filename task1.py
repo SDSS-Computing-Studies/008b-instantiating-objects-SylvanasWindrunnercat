@@ -88,8 +88,8 @@ class Pet:
         self.birthdate = input("Enter your pet's birthdate: ")
 
     def displayPet(self):
-        output1 = self.name + " " + self.animal
-        output2 = self.breed + " is owned by " + self.owner
+        output1 = str(self.name) + " " + str(self.animal)
+        output2 = str(self.breed) + " is owned by " + str(self.owner)
         print(output1)
         print(output2)
         
@@ -109,4 +109,5 @@ while a != 3:
         for b in pets:
             if x == b.name:
                 Pet.displayPet(x)
+
 
